@@ -18,10 +18,6 @@
 require 'rails_helper'
 
 RSpec.describe ActivityStreams::Objects::Object, type: :model do
-  it "has a valid factory" do
-    expect(build(:activity_streams_objects_object)).to be_valid
-  end
-
   context "database" do
     context "columns" do
       it { should have_db_column(:id).of_type(:uuid) }
@@ -36,13 +32,6 @@ RSpec.describe ActivityStreams::Objects::Object, type: :model do
       it { should have_db_column(:created_at).of_type(:datetime) }
       it { should have_db_column(:updated_at).of_type(:datetime) }
       it { should have_db_column(:objectable_id).of_type(:integer) }
-    end
-  end
-
-  context "active record" do
-    context "validations" do
-      it { should validate_presence_of(:objectable_type) }
-      it { should validate_presence_of(:objectable_id) }
     end
   end
 end

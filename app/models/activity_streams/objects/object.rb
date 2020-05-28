@@ -22,7 +22,7 @@ module ActivityStreams
     # Activity Vocabulary, including other Core types such as Activity, 
     # IntransitiveActivity, Collection and OrderedCollection. 
     class Object < ApplicationRecord
-      validates_presence_of :objectable_type, :objectable_id
+      delegated_type :objectable, types: %w[ ActivityStreams::Objects::Actors::Actor ], dependent: :destroy
     end
   end
 end
