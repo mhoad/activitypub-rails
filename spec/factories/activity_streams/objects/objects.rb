@@ -19,12 +19,7 @@ FactoryBot.define do
   factory :activity_streams_objects_object, class: 'ActivityStreams::Objects::Object' do
     objectable_type { "MyString" }
     objectable_id { 1 }
-    content { "MyString" }
-    name { "MyString" }
-    end_time { "2020-05-28 18:00:36" }
-    published { "2020-05-28 18:00:36" }
-    start_time { "2020-05-28 18:00:36" }
-    summary { "MyString" }
-    url { "MyString" }
+    name { "My Object" }
+    summary { "This is a simple object" }
   end
 end

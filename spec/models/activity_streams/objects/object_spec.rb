@@ -18,6 +18,10 @@
 require 'rails_helper'
 
 RSpec.describe ActivityStreams::Objects::Object, type: :model do
+  it "has a valid factory" do
+    expect(build(:activity_streams_objects_object)).to be_valid
+  end
+
   context "database" do
     context "columns" do
       it { should have_db_column(:id).of_type(:uuid) }
