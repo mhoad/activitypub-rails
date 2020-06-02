@@ -10,9 +10,9 @@
 #
 module ActivityStreams
   module Objects
-    # Represents any kind of multi-paragraph written work. 
-    # https://www.w3.org/ns/activitystreams#Article
-    class Article < Document
+    # Represents a document of any kind. 
+    # https://www.w3.org/ns/activitystreams#Document
+    class Document < Object
       
     end
   end

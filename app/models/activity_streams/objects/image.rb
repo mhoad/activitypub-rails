@@ -10,7 +10,7 @@
 #
 module ActivityStreams
   module Objects
-    # Represents any kind of multi-paragraph written work. 
+    # An image document of any kind. 
     # https://www.w3.org/ns/activitystreams#Article
     class Article < Document
       

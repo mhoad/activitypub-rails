@@ -7,7 +7,7 @@ module ActivityStreams
         # can have multiple actors.
         attribute :actor, ActivityStreams::Objects::ObjectData.to_array_type
         # Describes an object of any kind.
-        attribute :object, ActivityStreams::Objects::ObjectData.to_array_type
+        attribute :object, ActivityStreams::Objects::ObjectData.to_type
         # Describes the indirect object, or target, of the activity. The precise 
         # meaning of the target is largely dependent on the type of action being 
         # described but will often be the object of the English preposition "to". 
