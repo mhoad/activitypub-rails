@@ -16,11 +16,8 @@
 #  updated_at      :datetime         not null
 #  objectable_id   :uuid             not null
 #
-FactoryBot.define do
-  factory :activity_streams_objects_object, class: 'ActivityStreams::Objects::Object' do
-    # objectable_type { "ActivityStreams::Objects::Object" }
-    # objectable_id { 1 }
-    name { "My Object" }
-    summary { "This is a simple object" }
-  end
+require 'rails_helper'
+
+RSpec.describe ActivityStreams::Objects::Article, type: :model do
+  pending "add some examples to (or delete) #{__FILE__}"
 end

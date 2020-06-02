@@ -18,17 +18,10 @@
 #
 module ActivityStreams
   module Objects
-    # Describes an object of any kind. The Object type serves as the base 
-    # type for most of the other kinds of objects defined in the 
-    # Activity Vocabulary, including other Core types such as Activity, 
-    # IntransitiveActivity, Collection and OrderedCollection. 
-    class Object < ApplicationRecord
-      delegated_type :objectable, 
-        types: %w[ 
-          ActivityStreams::Objects::Actors::Actor 
-          ActivityStreams::Objects::Activities::Activity 
-        ], 
-        dependent: :destroy
+    # Represents any kind of multi-paragraph written work.
+    # https://www.w3.org/ns/activitystreams#Article
+    class Article < Object
+      
     end
   end
 end

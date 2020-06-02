@@ -17,10 +17,7 @@
 #  objectable_id   :uuid             not null
 #
 FactoryBot.define do
-  factory :activity_streams_objects_object, class: 'ActivityStreams::Objects::Object' do
-    # objectable_type { "ActivityStreams::Objects::Object" }
-    # objectable_id { 1 }
-    name { "My Object" }
-    summary { "This is a simple object" }
+  factory :activity_streams_objects_article, class: 'ActivityStreams::Objects::Article' do
+    
   end
 end

@@ -10,6 +10,7 @@
 #  published       :datetime
 #  start_time      :datetime
 #  summary         :string
+#  type            :string
 #  url             :string
 #  created_at      :datetime         not null
 #  updated_at      :datetime         not null
