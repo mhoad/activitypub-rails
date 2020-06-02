@@ -193,6 +193,8 @@ GEM
     standard (0.4.6)
       rubocop (~> 0.83.0)
       rubocop-performance (~> 1.5.2)
+    store_model (0.7.0)
+      activerecord (>= 5.2)
     thor (1.0.1)
     turbolinks (5.2.1)
       turbolinks-source (~> 5.2)
@@ -231,6 +233,7 @@ DEPENDENCIES
   spring
   spring-watcher-listen (~> 2.0.0)
   standard
+  store_model
   turbolinks (~> 5)
   tzinfo-data
   web-console (>= 3.3.0)
