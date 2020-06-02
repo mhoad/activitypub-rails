@@ -13,7 +13,7 @@
 #  url             :string
 #  created_at      :datetime         not null
 #  updated_at      :datetime         not null
-#  objectable_id   :integer          not null
+#  objectable_id   :uuid             not null
 #
 require 'rails_helper'
 

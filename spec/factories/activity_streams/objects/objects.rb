@@ -13,7 +13,7 @@
 #  url             :string
 #  created_at      :datetime         not null
 #  updated_at      :datetime         not null
-#  objectable_id   :integer          not null
+#  objectable_id   :uuid             not null
 #
 FactoryBot.define do
   factory :activity_streams_objects_object, class: 'ActivityStreams::Objects::Object' do

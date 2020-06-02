@@ -36,7 +36,7 @@ ActiveRecord::Schema.define(version: 2020_05_28_193335) do
 
   create_table "activity_streams_objects_objects", id: :uuid, default: -> { "gen_random_uuid()" }, force: :cascade do |t|
     t.string "objectable_type", null: false
-    t.integer "objectable_id", null: false
+    t.uuid "objectable_id", null: false
     t.string "content"
     t.string "name"
     t.datetime "end_time"
